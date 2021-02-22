@@ -1,0 +1,39 @@
+What is the difference between cookie and session variables
+
+
+*-------------------COOKIES---------------------------*
+
+Cookies are client-side files that contain user information
+
+Cookie ends depending on the lifetime you set for it
+
+You don't need to start cookie as it is stored in your local machine
+
+ maximum cookie size is 4KB
+
+
+A cookie is not dependent on Session
+
+There is no function named unsetcookie()
+
+Cookie expires depending on the lifetime you set for it.
+
+
+*-------------------SESSION---------------------------*
+
+Sessions are server-side files which contain user information
+
+A session ends when a user closes his browser
+
+In PHP, before using $_SESSION, you have to write session_start(); Likewise for other languages
+
+ maximum SESSION SIZE is the memory a script can consume at one time, which is 128MB by default
+
+A session is dependent on Cookie
+
+
+Session_destroy(); is used to destroy all registered data or to unset some
+
+Session ends when a user closes his/her browser.
+
+
